@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPU Event Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header >
+    <img src="images/lpu logo 2.png" alt="LPU Logo" class="logo">
+    <center><h1>LPU Event Dashboard</h1></center>
+
+    
+
+ <center><video controls autoplay muted loop class="bg-video" width="225" height="125">
+  <source src="ThinkBig_1080p.mp4" type="video/mp4">
+</video></center>
+
+    
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About the LPU Event Fest</h2>
+    <p>
+      The LPU Event Fest is one of the most exciting events for hostel students. It brings students from different places together
+      in one energetic celebration and creates a fun and friendly atmosphere inside the university campus. Students get an opportunity
+      to take a break from their regular academic routine and enjoy music, dance, games, cultural performances, and various activities.
+      The fest allows students to showcase their hidden talents and participate individually or as a team. Students get a chance to interact
+      with people from different states and cultures, make new friends, and create unforgettable memories. The event also encourages
+      creativity, confidence, communication, teamwork, and cooperation among students.
+    </p>
+  </section>
+
+  <!-- MAIN POINTS -->
+  <section class="points">
+    <h2>Main Points for the LPU Hostel Fest</h2>
+    <div class="points-grid">
+      <div class="point">
+        <i class="fa-solid fa-champagne-glasses" style="color:#a3123a"></i>
+        <div><b>Fun and Entertainment –</b><br>Music, dance, games, and cultural programs.</div>
+      </div>
+      <div class="point">
+        <i class="fa-solid fa-user-group" style="color:#a3123a"></i>
+        <div><b>Making New Friends –</b><br>Students from different states meet and interact.</div>
+      </div>
+      <div class="point">
+        <i class="fa-solid fa-star" style="color:#a3123a"></i>
+        <div><b>Showcasing Talents –</b><br>Students can show their singing, dancing, and other skills.</div>
+      </div>
+      <div class="point">
+        <i class="fa-solid fa-trophy" style="color:#a3123a"></i>
+        <div><b>Games and Competitions –</b><br>Activities create excitement and healthy competition.</div>
+      </div>
+      <div class="point">
+        <i class="fa-solid fa-earth-asia" style="color:#2a1a8a"></i>
+        <div><b>Cultural Unity –</b><br>Students from different cultures celebrate together.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE EVENTS -->
+  <section class="events">
+    <h2>Explore Events</h2>
+    <p class="sub">Click an event button to open its dedicated page.</p>
+    <div class="event-grid">
+      <a href="sports.html" class="event-card">
+        <div class="event-img" style="background-image:url('images/sports.jpg')"></div>
+        <div class="event-btn"><span><i class="fa-solid fa-trophy"></i> Sports Event</span><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+      <a href="dance.html" class="event-card">
+        <div class="event-img" style="background-image:url('images/dance.jpg')"></div>
+        <div class="event-btn"><span><i class="fa-solid fa-person-dress"></i> Dance Event</span><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+      <a href="music.html" class="event-card">
+        <div class="event-img" style="background-image:url('images/music.jpg')"></div>
+        <div class="event-btn"><span><i class="fa-solid fa-music"></i> Music Event</span><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- REGISTRATION -->
+  <section class="register">
+    <h2><i class="fa-solid fa-clipboard-list"></i> Registration Form</h2>
+    <form id="regForm" class="form-box">
+      <div class="field">
+        <label>1. Enter Name:</label>
+        <input type="text" id="name" placeholder="Your name" required>
+      </div>
+      <div class="field">
+        <label>2. Register Number:</label>
+        <input type="text" id="regno" placeholder="Your register number" required>
+      </div>
+      <div class="field">
+        <label>3. Enter Email:</label>
+        <input type="email" id="email" placeholder="your@email.com" required>
+      </div>
+      <div class="field">
+        <label>4. Mobile Number:</label>
+        <input type="tel" id="mobile" placeholder="10 digit number" pattern="[0-9]{10}" maxlength="10" required>
+      </div>
+      <div class="field full">
+        <label>5. Event Preference:</label>
+        <select id="event" required>
+          <option value="">Select an event</option>
+          <option>Sports Event</option>
+          <option>Dance Event</option>
+          <option>Music Event</option>
+        </select>
+      </div>
+      <div class="full center">
+        <button type="submit" class="submit-btn">Submit Registration</button>
+        <p id="msg" class="success"></p>
+      </div>
+    </form>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2><i class="fa-solid fa-phone"></i> Contact Us</h2>
+    <div class="contact-grid">
+      <div class="c-item">
+        <i class="fa-solid fa-phone"></i>
+        <div><b>Phone:</b><br>1234567890</div>
+      </div>
+      <div class="c-item">
+        <i class="fa-solid fa-envelope"></i>
+        <div><b>Email:</b><br>lpu_events@gmail.com</div>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <footer>LPU Event Fest &nbsp;|&nbsp; Music &nbsp;|&nbsp; Dance &nbsp;|&nbsp; Sports &nbsp;|&nbsp; Campus Life</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
